@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ulanovich David-Developer</title> 
+<meta name="description" content="Portfolio of Ulanovich David, full-stack developer. Projects, skills and contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+<div class="crosshair" id="crosshair" aria-hidden="true">
+  <div class="crosshair-h"></div>
+  <div class="crosshair-v"></div>
+  <span class="crosshair-coords" id="coords">X:000 Y:000</span>
+</div>
+
+<a class="skip-link" href="#conteudo">Skip to content</a>
+
+<header class="toolbar">
+  <div class="toolbar-inner">
+    <a href="#topo" class="logo">
+      <span class="logo-text">Ulanovich<span class="dim">.</span>dev</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#sobre">01 — About</a>
+      <a href="#projetos">02 — Projects</a>
+      <a href="#habilidades">03 — Skills</a>
+      <a href="#contato">04 — Contact me</a>
+    </nav>
+    <div class="toolbar-actions">
+      <button id="themeToggle" class="theme-toggle" aria-pressed="false" aria-label="Switch Dark Mode">
+        <span class="theme-toggle-track"><span class="theme-toggle-thumb"></span></span>
+        <span class="theme-toggle-label" id="themeLabel">clear mode</span>
+      </button>
+      <button class="nav-burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <section class="hero" id="topo">
+    <div class="hero-scale" aria-hidden="true">
+      <span>0</span><span>10</span><span>20</span><span>30</span><span>40</span><span>50</span><span>60</span><span>70</span><span>80</span><span>90</span><span>100</span>
+    </div>
+    <div class="hero-content">
+      <p class="eyebrow"> portfolio-rev. 2026</p>
+      <h1 class="hero-title">
+        I develop websites
+        <span class="hero-typed" id="typed"></span><span class="hero-cursor">|</span>
+      </h1>
+      <p class="hero-sub">
+        I am <strong>Ulanovich David</strong>, full-stack developer. I turn draft into product:
+        Semantic HTML, purposeful CSS, and real problem-solving JavaScript.
+      </p>
+      <div class="hero-actions">
+        <a href="#projetos" class="btn btn-primary">View projects</a>
+        <a href="#contato" class="btn btn-ghost">Talk to me</a>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-item">
+          <span class="meta-num" data-count="15">0</span>
+          <span class="meta-label">published projects</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-num" data-count="5">0</span>
+          <span class="meta-label">years of experience</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-num" data-count="6">0</span>
+          <span class="meta-label">customers served</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="sobre">
+    <div class="section-head">
+      <span class="section-tag">01</span>
+      <h2>About the clipboard</h2>
+    </div>
+    <div class="about-grid">
+      <p class="about-text">
+        Full-Stack Developer with 4 years of practical experience in web development and 2 years of commercial experience.
+I specialize in developing full-fledged web products — from interface design and frontend logic to backend, APIs, integrations, and production deployment.
+I work with JavaScript / TypeScript, React, and the modern web stack. I can independently develop projects from scratch, work with existing code and architecture, identify and fix problems, and bring projects to production.
+The main focus is on creating a full‑fledged product with a well‑thought‑out architecture, a convenient user scenario, an interactive interface, and the necessary business logic.
+      </p>
+      <ul class="about-facts">
+        <li><span class="fact-k">Base</span><span class="fact-v">St. Louis, MA-remote</span></li>
+        <li><span class="fact-k">Focus</span><span class="fact-v">Full - Stack &amp; UI-UX Engineering</span></li>
+        <li><span class="fact-k">Stack</span><span class="fact-v">JS, React, CSS</span></li>
+        <li><span class="fact-k">Available</span><span class="fact-v">for freelance projects</span></li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section class="section" id="projetos">
+    <div class="section-head">
+      <span class="section-tag">02</span>
+      <h2>Projects</h2>
+    </div>
+
+    <div class="filters" role="tablist" aria-label="Filtrar projetos">
+      <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web apps</button>
+      <button class="filter-btn" data-filter="ui" role="tab" aria-selected="false">UI-UX / Design</button>
+    </div>
+
+    <div class="project-grid" id="projectGrid">
+    </div>
+
+    </section>
+   
+ 
+
+  <section class="section" id="habilidades">
+    <div class="section-head">
+      <span class="section-tag">03</span>
+      <h2>Toolbox</h2>
+    </div>
+    <div class="skills-grid" id="skillsGrid">
+      <!-- gerado via JS -->
+    </div>
+  </section>
+
+  <section class="section" id="contato">
+    <div class="section-head">
+      <span class="section-tag">04</span>
+      <h2>Contact me</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p>Do you have a project in mind or just want to exchange an idea about prototyping a website?
+ Send a message-I will respond within 2 business days.</p>
+        <ul class="contact-links">
+          <li><a href="https://mail.google.com/mail/u/0/#inbox">UlanovichDavid@gmail.com</a></li>
+          <li><a href="https://github.com/UlanovichDavid" target="_blank" rel="noopener">github.com/UlanovichDavid</a></li>
+          <li><a href="https://www.linkedin.com/in/david-ulanovich-a967a436b/" target="_blank" rel="noopener">linkedin.com/in/UlanovichDavid</a></li>
+          <li><a href="https://">UlanovichDavid@gmail.com</a></li>
+        </ul>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+          <span class="field-error" id="nameError"></span>
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+          <span class="field-error" id="emailError"></span>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <span class="field-error" id="messageError"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit">
+          <span class="btn-submit-label">Send message</span>
+        </button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Designed and built by Ulanovich David · <span id="year"></span></p>
+  <button class="to-top" id="toTop" aria-label="Voltar ao topo">↑ top</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
